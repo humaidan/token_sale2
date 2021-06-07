@@ -18,4 +18,7 @@ for (let contract in output) {
     path.resolve(buildPath, contract.replace(":", "") + ".json"),
     output[contract]
   );
+  console.log("Generating " + contract.replace(":", "") + ".json" + " ......");
 }
+
+console.log("Compile ............ successful");
